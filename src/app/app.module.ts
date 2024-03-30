@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PagListaVehiculosComponent } from './paginas/PagListaVehiculos/PagListaVehiculos.component';
+import { PaginaModule } from './paginas/PaginaModule'
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagListaVehiculosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PaginaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
