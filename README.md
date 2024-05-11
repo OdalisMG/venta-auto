@@ -1,27 +1,28 @@
-# VentaAuto
+# Proyecto Angular - Aplicacion de Venta de autos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+Requisitos
 
-## Development server
+Generar un nuevo componente que sirva para registrar al cliente.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  Procedimiento propuesto:
+  1.- Agregar al menú principal una nueva liga hacia el componente de clientes
+  2.- Crear el nuevo componente de clientes
+  3.- Crear la nueva ruta en app.module.ts
+  4.- Probar que todo funcione
+  5.- Poner un encabezado en el componente de clientes
+  6.- Poner un  botón en el footer que nos dirija al componente de Inicio
+  7.- Probar que funcione
+  8.- Capturar los campos:
+        a. Nombre
+        b. Password
+        c. Preguntar si quiere que lo contactemos.
+        d. Si quiere que lo contactemos pedir los datos
+            - Telefono
+            - E-mail
 
-## Code scaffolding
+  9.- Botón para guardar los cambios.
+        (No hace nada, solo aparece un alert indicando que se guarda el dato)
+10.- Probar que funcione
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Correo electronico: Godalis64@gmail.com
+Nombre: Odalis Magdalena Garcia Pincay 
