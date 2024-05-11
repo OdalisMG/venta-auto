@@ -1,21 +1,40 @@
 import { NgModule } from "@angular/core";
-import { PagListaVehiculosComponent } from './PagListaVehiculos/PagListaVehiculos.component';
-import { CommonModule } from "@angular/common"
-import { FormsModule } from "@angular/forms";
-import { UtilitariosModule }  from "../utilitarios/UtilitariosModule";
+import { CommonModule } from '@angular/common';
+import { PagListaVehiculoComponent } from "./PagListaVehiculos/PagListaVehiculos.component" ;
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { PagVehiculoComponent } from "./PagVehiculo/PagVehiculo.component";
+import { RouterModule } from "@angular/router";
+import { PagVehiculoRegistroComponent } from "./PagVehiculoRegistro/PagVehiculoRegistro.component";
+import { HomeComponent } from "./Home/Home.component";
+import { AEspacioPipe } from "../utilitarios/pipes/AEspacio.pipe";
+import { ClientesComponent } from "./Clientes/Clientes.component";
+import { PagVehiculoEditarComponent } from "./PagVehiculoEditar/PagVehiculoEditar.component";
 
-@NgModule({
+@NgModule ({
+    declarations:[
+        PagListaVehiculoComponent,
+        PagVehiculoComponent,
+        PagVehiculoRegistroComponent,
+        HomeComponent,
+        AEspacioPipe,
+        ClientesComponent,
+        PagVehiculoEditarComponent  
+
+    ],
+
     imports:[
         CommonModule,
-        FormsModule,
-        UtilitariosModule
+        FormsModule,        
+        RouterModule,
+        ReactiveFormsModule
     ],
-    declarations:[
-        PagListaVehiculosComponent
-    ],
-    exports: [
-        PagListaVehiculosComponent
-
+    exports:[
+        PagListaVehiculoComponent,
+        PagVehiculoComponent,
+        PagVehiculoRegistroComponent,        
+        HomeComponent,
+        ClientesComponent,
+        
     ]
 
 })
