@@ -13,7 +13,7 @@
 
     <div class="row">
       <div class="col-3">
-        <a class="btn btn-info" [routerLink]="['/vehiculo']">+ Nuevo Vehiculo</a>
+        <a class="btn btn-outline-dark" [routerLink]="['/vehiculo']">Nuevo Vehiculo</a>
       </div>
       <div class="col-3">
         <label for="rows">Filas:</label>
@@ -27,12 +27,12 @@
     </div>
     <br>
 
-    <table class="table table-white">
+    <table class="table table-light">
       <thead>
         <tr>
           <th>
-            <button class="btn btn-sm" (click)="mostrarImagen = !mostrarImagen"
-              [ngClass]="{'btn-info': mostrarImagen, 'btn-warning': !mostrarImagen}"
+            <button class="btn btn-outline-dark" (click)="mostrarImagen = !mostrarImagen"
+              [ngClass]="{'btn-secondary': mostrarImagen, 'btn-danger': !mostrarImagen}"
               [innerText]="mostrarImagen ? 'Ocultar Imagen' : 'Mostrar Imagen'">
             </button>
 
@@ -61,7 +61,7 @@
             <td>{{item.calificacion}}</td>
             <td>
             <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-editar" (click)="editarVehiculo(item.codigo)">Editar</button>
+              <button type="button" class="btn btn-outline-editar" (click)="editarVehiculo(item.codigo)">Editar</button>
               <button type="button" class="btn btn-eliminar" (click)="eliminar(item.codigo)">Eliminar</button>
             </div>
           </td>
@@ -73,11 +73,11 @@
           <td>
             <nav aria-label="Page navigation example">
               <ul class="pagination">
-                <li class="page-item"><a class="page-link" (click)='atras()'>Previous</a></li>
+                <li class="page-item"><a class="page-link" (click)='atras()'>Anterior</a></li>
                 <li class="page-item" *ngFor="let pagina of listaPaginas" [ngClass]="{'active': pagina == page}">
                   <a class="page-link" (click)="cambiarpagina(pagina)">{{pagina}}</a>
                 </li>
-                <li class="page-item"><a class="page-link" (click)="siguiente()">Next</a></li>
+                <li class="page-item"><a class="page-link " (click)="siguiente()">Siguiente</a></li>
               </ul>
             </nav>
           </td>
